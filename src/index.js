@@ -29,5 +29,5 @@ app.listen(3000, async () => {
     app.use('/api', apiRoutes);
 
     const user = await userRepo.getAll()
-        await likeService.toggleLike(tweets[0].id, 'Tweet', user[0].id);
+        // await likeService.toggleLike(tweets[0].id, 'Tweet', user[0].id);
 });
