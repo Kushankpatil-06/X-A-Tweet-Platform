@@ -4,10 +4,10 @@ export const create = async (req,res)=>{
     try {
         const response = await service.create(req.body);
             res.status(201).json({
-             success:true,
-             message:"Succesfully Created Tweet",
-             data:response,
-             err:{}
+            success:true,
+            message:"Succesfully Created Tweet",
+            data:response,
+            err:{}
 
             });
         } catch (error) {
