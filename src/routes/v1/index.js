@@ -9,8 +9,8 @@ const router = express.Router();
 
 
 router.post('/tweets',authenticate,create)
-router.post('/toggle/like',toggleLike)
-router.post('/comments', createComment);
+router.post('/toggle/like',authenticate,toggleLike)
+router.post('/comments', authenticate,createComment);
 router.get('/tweets/:id',getTweets );
 router.post('/signUp',signup)
 router.post('/login', login);
